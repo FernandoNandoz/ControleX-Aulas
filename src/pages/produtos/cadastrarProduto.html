@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro de Produtos</title>
+
+    <link rel="stylesheet" href="../../assets/dist/css/bootstrap.min.css" />
+  </head>
+  <body>
+    <div class="container" style="width: 700px;">
+
+      <h3 class="fw-bold my-5">Cadastrar Produtos</h3>
+
+      <form>
+        <div class="mb-3">
+          <label for="codigoProduto" class="form-label">Codigo do Produto</label>
+          <input
+            type="number"
+            class="form-control"
+            id="codigoProduto"
+            name="codigoProdutoData"
+            placeholder="Codigo do Produto"/>
+        </div>
+
+        <div class="mb-3">
+          <label for="nomeCompleto" class="form-label">Nome do Produto</label>
+          <input 
+            type="text" 
+            class="form-control"
+            id="nomeProduto"
+            name="nomeProdutoData"
+            placeholder="Nome do Produto"/>
+        </div>
+
+        <div class="mb-3">
+          <label for="selectCategoria" class="form-label">Categoria</label>
+          <select class="form-select" id="selectCategoria" name="categoriaData">
+            <option selected>Selecione uma categoria</option>
+            <option>Periféricos</option>
+            <option>Hardware</option>
+            <option>Softwares</option>
+            <option>Mobile</option>
+          </select>
+        </div>
+
+        <div class="mb-3">
+          <label for="selectFornecedor" class="form-label">Fornecedor</label>
+          <select class="form-select" id="selectFornecedor" name="fornecedorData">
+            <option selected>Selecione uma fornecedor</option>
+            <option>Kabum</option>
+            <option>Pichau</option>
+            <option>Amazon</option>
+            <option>Mercado Livre</option>
+          </select>
+        </div>
+
+        <div class="mb-3">
+          <label for="quantidade" class="form-label">Quantidade</label>
+          <input 
+            type="number" 
+            class="form-control"
+            id="quantidade"
+            name="quantidadeData"
+            placeholder="Quantidade"/>
+        </div>
+
+        <div class="mb-3">
+          <label for="valorVenda" class="form-label">Valor Venda</label>
+          <input 
+            type="number" 
+            class="form-control"
+            id="valorVenda"
+            name="valorVendaData"
+            placeholder="Valor Venda"/>
+        </div>
+
+        <div class="d-grid gap-3 d-md-flex justify-content-md-end my-5">
+          <button type="button" class="btn btn-secondary" style="width: 120px;">
+            Voltar
+          </button>
+          <button type="button" class="btn btn-primary" style="width: 120px;">
+            Cadastrar
+          </button>
+        </div>
+
+      </form>
+    </div>
+
+    <script src="../../assets/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../../js/jquery.min.js"></script>
+    <script src="../../js/index.js"></script>
+  </body>
+</html>
