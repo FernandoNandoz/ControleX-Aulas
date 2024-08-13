@@ -18,38 +18,42 @@
           <a href="#" class="link-dark text-decoration-none m-auto"><span class="fw-bold fs-3">ControleX</span></a>
         </div>  
 
-        <button class="nav-link active text-start ps-4 p-3 mx-2 border" id="inicio" data-bs-toggle="pill" type="button">
+        <button class="nav-link active text-start ps-4 p-3 mx-2 border" id="inicio" data-bs-toggle="pill" type="button" onclick="carregar('pages/dashboard/dashboard.html')">
           <img class="bi me-3" width="25" height="25" src="assets/dist/icons/house-fill.svg" alt="">
           Inicio
         </button>
 
-        <button class="nav-link" id="produtos" data-bs-toggle="pill" type="button">
+        <button class="nav-link text-start ps-4 p-3 mx-2 mt-2 border" id="produtos" data-bs-toggle="pill" type="button">
           <img class="bi me-3" width="25" height="25" src="assets/dist/icons/box-seam-fill.svg" alt="">
           Produtos
         </button>
 
-        <button class="nav-link" id="fornecedores" data-bs-toggle="pill" type="button">
+        <button class="nav-link text-start ps-4 p-3 mx-2 mt-2 border" id="fornecedores" data-bs-toggle="pill" type="button">
           <img class="bi me-3" width="25" height="25" src="assets/dist/icons/building-fill-down.svg" alt="">
           Fornecedores
         </button>
 
-        <button class="nav-link" id="estoque" data-bs-toggle="pill" type="button">
+        <button class="nav-link text-start ps-4 p-3 mx-2 mt-2 mb-auto border" id="estoque" data-bs-toggle="pill" type="button">
           <img class="bi me-3" width="25" height="25" src="assets/dist/icons/boxes.svg" alt="">
           Estoque
         </button>
 
-        <button class="nav-link" id="perfil" data-bs-toggle="pill" type="button">
-          <img class="bi me-3" width="25" height="25" src="assets/dist/icons/logo.svg" alt="">
+        <button class="nav-link text-start fs-5 fw-bold ps-4 p-3 mx-2 mb-2 border dropdown-toggle" data-bs-toggle="dropdown" id="perfil" type="button">
+          <img class="rounded-circle me-3" width="50" height="50" src="https://github.com/fernandonandoz.png" alt="">
           Perfil
         </button>
+
+        <div class="dropdown">
+          <ul class="dropdown-menu text-small shadow" style="width: 270px;">
+            <li><a class="dropdown-item" href="#">Meu Perfil</a></li>
+            <li><a class="dropdown-item" href="#">Configuração</a></li>
+            <li><hr class="dropdown-divider" /></li>
+            <li><a class="dropdown-item" href="index.html">Sair</a></li>
+          </ul>
+        </div>
       </div>
 
-      <div class="tab-content border border-5 border-warning" id="v-pills-tabContent">
-        <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab" tabindex="0">TEXTO DO BOTÃO</div>
-        <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab" tabindex="0">...</div>
-        <div class="tab-pane fade" id="v-pills-disabled" role="tabpanel" aria-labelledby="v-pills-disabled-tab" tabindex="0">...</div>
-        <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab" tabindex="0">...</div>
-        <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab" tabindex="0">...</div>
+      <div class="container-fluid min-vh-100 bg-light overflow-y-scroll" id="contentBody"> 
       </div>
 
     </main>
